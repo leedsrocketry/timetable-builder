@@ -1,2 +1,2 @@
 # timetable-builder
-Python script to build an .ics file for timetables (useful for such things as running the LURA academy)
+Python script that takes an .ics file as the input and transposes all the events to start at the requested date. Useful for such things as organising the LURA academy.
