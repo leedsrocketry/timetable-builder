@@ -42,4 +42,5 @@ with open(InputFilename, "r") as f:
 		updatedEvent = RelocateEvent(event, offset)
 		UpdatedCalendar.events.add(updatedEvent)
 
-print(UpdatedCalendar.events)
+with open('out.ics', 'w') as f:
+    f.writelines(UpdatedCalendar.serialize_iter())
